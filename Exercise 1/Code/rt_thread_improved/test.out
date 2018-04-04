@@ -1,0 +1,42 @@
+This system has 4 processors configured and 4 processors available.
+number of CPU cores=4
+Using sysconf number of CPUS=4, count in set=4
+Pthread Policy is SCHED_OTHER
+Pthread Policy is SCHED_FIFO
+PTHREAD SCOPE SYSTEM
+rt_max_prio=99
+rt_min_prio=1
+Setting thread 0 to core 0
+ CPU-0 
+Launching thread 0
+Setting thread 1 to core 1
+ CPU-1 
+Launching thread 1
+Setting thread 2 to core 2
+ CPU-2 
+Launching thread 2
+Setting thread 3 to core 3
+ CPU-3 
+Launching thread 3
+
+Thread idx=2, sum[0...300]=44850
+
+Thread idx=3, sum[0...400]=79800
+Thread idx=2 ran on core=2, affinity contained:
+Thread idx=1, sum[0...200]=19900
+Thread idx=3 ran on core=3, affinity contained:Thread idx=1 ran on core=1, affinity contained: CPU-0 
+Thread idx=0, sum[0...100]=4950
+ CPU-0 Thread idx=0 ran on core=0, affinity contained: CPU-1  CPU-0  CPU-1  CPU-0  CPU-1  CPU-2  CPU-3  CPU-2  CPU-1  CPU-3  CPU-2  CPU-3  CPU-2  CPU-3 
+
+
+Thread idx=0 ran 2 sec, 798 msec (798291 microsec)
+
+
+Thread idx=3 ran 2 sec, 682 msec (682990 microsec)
+
+
+Thread idx=1 ran 2 sec, 764 msec (764634 microsec)
+
+Thread idx=2 ran 2 sec, 718 msec (718230 microsec)
+
+TEST COMPLETE

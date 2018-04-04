@@ -4,6 +4,6 @@ Repository for work done in the course ECEN 5623 - Real-Time Embedded Systems @ 
 
 Includes:
 
-Homeworks
-Exercises
+Homeworks,
+Exercises,
 Final Project
